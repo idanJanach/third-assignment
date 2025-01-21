@@ -1,0 +1,21 @@
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .cell:hover {
+    transform: scale(1.05);
+  }
+  
+  .cell img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  
