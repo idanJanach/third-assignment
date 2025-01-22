@@ -1,5 +1,6 @@
 import React from "react";
-import image from "../assets/react.svg";
+import xImage from "../assets/x-image.png";
+import oImage from "../assets/o-image.png";
 import "./Cell.css";
 
 interface CellProps {
@@ -9,8 +10,8 @@ interface CellProps {
 
 const Cell: React.FC<CellProps> = ({ value, onClick }) => (
   <div className="cell" onClick={onClick}>
-    {value === "X" && <img src={image}/>}
-    {value === "O" && <img src={image}/>}
+    {value === "X" && <img src={xImage} alt="X" />}
+    {value === "O" && <img src={oImage} alt="O" />}
   </div>
 );
 
